@@ -15,7 +15,12 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="/styles/style.css" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script
       src="https://kit.fontawesome.com/dbf5d821fc.js"
       crossorigin="anonymous"
@@ -105,6 +110,56 @@
         </nav>
       </div>
     </header>
-    <div class="container-fluid"></div>
+    <div class="container-fluid">
+      <section class="image-gallery">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/images/mirror-child.jpg"
+                class="img-fluid carousel-img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/images/wedding-kids.jpg"
+                class="img-fluid carousel-img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/images/lake.jpg"
+                class="img-fluid carousel-img"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

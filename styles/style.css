@@ -24,3 +24,6 @@ img.logo {
   width: 200px;
   margin: 0 auto;
 }
+.carousel-img {
+  max-height: 600px;
+}
