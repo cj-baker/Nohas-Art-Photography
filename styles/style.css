@@ -1,7 +1,9 @@
 :root {
   --primary-font: "Raleway", sans-serif;
-
-  --secondary-font: "Pinyon Script", cursive;
+  --heading-font: "Pinyon Script", cursive;
+  --primary-color: black;
+  --secondary-color: white;
+  --accent-color: #f8f9fa;
 }
 
 body {
@@ -40,12 +42,14 @@ img.logo {
   justify-content: center;
 }
 .image-container {
-  max-height: 500px;
+  max-width: 400px;
   align-items: center;
   position: relative;
 }
 .home-images {
   width: 100%;
+  object-fit: scale-down;
+  background-color: black;
   aspect-ratio: 4 / 5;
   filter: grayscale(100);
 }
