@@ -88,9 +88,14 @@
                     My Work
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Portraits</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Families</a>
+                      <a class="dropdown-item" href="#">Portraits</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Child Milestone</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Boudoir</a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="#">Events</a>
@@ -110,56 +115,74 @@
         </nav>
       </div>
     </header>
-    <div class="container-fluid">
-      <section class="image-gallery">
-        <div
-          id="carouselExampleAutoplaying"
-          class="carousel carousel-dark slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="/images/mirror-child.jpg"
-                class="img-fluid carousel-img"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/images/wedding-kids.jpg"
-                class="img-fluid carousel-img"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/images/lake.jpg"
-                class="img-fluid carousel-img"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev"
+
+    <section class="grid image-grid grid-3-even-columns">
+      <div class="image-container">
+        <img
+          class="img-fluid home-images portrait-image"
+          src="/images/portrait.jpg"
+          alt="Picture of Child Looking in a Mi"
+        />
+        <div class="image-overlay">
+          <a
+            class="image-link"
+            href="/work.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Portraits</a
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-      </section>
-    </div>
+      </div>
+
+      <div class="image-container">
+        <img
+          class="img-fluid home-images mileston-image"
+          src="/images/mirror-child.jpg"
+          alt="Picture of Child Looking in a Mi"
+        />
+        <div class="image-overlay">
+          <a
+            class="image-link"
+            href="/work.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Child Milestone</a
+          >
+        </div>
+      </div>
+      <div class="image-container">
+        <img
+          class="img-fluid home-images event-image"
+          src="/images/wedding-kids.jpg"
+          alt="Picture of Child Looking in a Mi"
+        />
+        <div class="image-overlay">
+          <a
+            class="image-link"
+            href="/work.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Events</a
+          >
+        </div>
+      </div>
+      <div class="image-container">
+        <img
+          class="img-fluid home-images boudoir-image"
+          src="/images/boudoir.jpg"
+          alt="Picture of Child Looking in a Mi"
+        />
+        <div class="image-overlay">
+          <a
+            class="image-link"
+            href="/work.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Boudoir</a
+          >
+        </div>
+      </div>
+    </section>
   </body>
 </html>

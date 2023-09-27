@@ -1,3 +1,9 @@
+:root {
+  --primary-font: "Raleway", sans-serif;
+
+  --secondary-font: "Pinyon Script", cursive;
+}
+
 body {
   text-align: center;
 }
@@ -24,6 +30,48 @@ img.logo {
   width: 200px;
   margin: 0 auto;
 }
-.carousel-img {
-  max-height: 600px;
+.grid-3-even-columns {
+  margin: 30px 60px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+.image-grid {
+  display: grid;
+  justify-content: center;
+}
+.image-container {
+  max-height: 500px;
+  align-items: center;
+  position: relative;
+}
+.home-images {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  filter: grayscale(100);
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.image-link {
+  font-size: 64px;
+  color: white;
+  transform: translateY(40px);
+  transition: transform 1000ms;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+  transition: ease-in-out all 300ms;
+}
+.image-overlay:hover > .image-link {
+  transform: translateY(0);
 }
