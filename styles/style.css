@@ -94,10 +94,14 @@ footer {
 footer a {
   color: var(--primary-color);
 }
-h3 {
+h3.contact-me {
   text-align: center;
   font-size: 24px;
   margin: 0 auto;
   border-bottom: solid var(--primary-color);
   width: 80%;
+}
+.contact-link:hover {
+  transform: scale(1.5);
+  transition: ease-in-out all 300ms;
 }
