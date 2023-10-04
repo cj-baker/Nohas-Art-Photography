@@ -3,13 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Raleway:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script
       src="https://kit.fontawesome.com/dbf5d821fc.js"
       crossorigin="anonymous"
@@ -19,10 +30,134 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <title>About Tarrie Chrystina</title>
+    <title>Noha's Art Photography</title>
   </head>
   <body>
-    <div class="hero-container"></div>
-    <div class="container-fluid"></div>
+    <div class="container">
+      <header class="hero-container">
+        <div class="hero-content">
+          <div class="row mb-2 justify-content-evenly">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <img
+                class="logo img"
+                src="/images/logo.png"
+                alt="Noha's Art Photography Logo"
+              />
+              <h1>About Me<menu></menu></h1>
+            </div>
+            <div class="col-3"></div>
+          </div>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid justify-content-center">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarNavDropdown"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/"
+                      ><i
+                        class="fa-solid fa-camera-retro"
+                        style="color: #000000"
+                      ></i
+                    ></a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/about">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      My Work
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="/portraits">Portraits</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="child-milestone"
+                          >Child Milestone</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/boudoir">Boudoir</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/events">Events</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pricing-services"
+                      >Pricing and Services</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact-me">Contact Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <h3 class="about-heading mt-5">Hello Everyone! My name is Tarrie.</h3>
+      <section class="about">
+        <div class="p-4">
+          <img
+            class="about-image img-fluid"
+            src="/images/profile.jpg"
+            alt="Picture of Tarrie"
+          />
+        </div>
+        <div class="about-paragraph">
+          <p>
+            I have been taking photos for as long as I could walk, but have been
+            doing photos on the professional side for a little over 15 years. I
+            got the passion from my Nana. She taught me the importance of
+            capturing moments in life, not only for myself, but for others as
+            well. My style of photography is unlike most, but it is my style,
+            and that is what makes what I do, unique. If you have any questions
+            please feel free to message me. I look forward to hearing from
+            y'all!
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <p class="copyright py-4">
+          Copyright © 2023 Tarrie Chrystina
+          <br />
+          <small
+            >This website was coded by
+            <a
+              href="http://caseybaker.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Casey Baker</a
+            ></small
+          >
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
