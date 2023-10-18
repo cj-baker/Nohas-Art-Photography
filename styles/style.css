@@ -5,6 +5,8 @@
   --secondary-color: white;
   --accent-color: #f8f9fa;
   --overlay-color: rgba(0, 0, 0, 0.8);
+  --link-color: rgb(100, 98, 98);
+  --link-hover: rgb(252, 87, 87);
 }
 body {
   margin: 8px;
@@ -110,7 +112,11 @@ section.about {
   transition: ease-in-out 300ms;
   filter: grayscale(0);
 }
-
+.grid-images {
+  height: 400px;
+  object-fit: contain;
+  border-radius: 3px;
+}
 footer {
   background-color: var(--accent-color);
 }
@@ -125,10 +131,24 @@ h3.contact-me {
   width: 80%;
 }
 .contact-link:hover {
+  color: var(--link-hover) !important;
   transform: scale(1.5);
   transition: ease-in-out all 300ms;
 }
-
+.link {
+  color: var(--link-color);
+}
+.link:hover {
+  transition: ease-in-out 300ms;
+  color: var(--link-hover);
+}
+.social-link {
+  font-size: 32px;
+}
+.social-link:hover {
+  transition: ease-in-out 300ms;
+  color: var(--link-hover) !important;
+}
 @media (max-width: 992px) {
   .about-paragraph {
     font-size: 14px;
