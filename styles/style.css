@@ -175,6 +175,14 @@ footer a {
   p {
     font-size: 14px;
   }
+  .grid-4-even-columns {
+    margin: 30px 30px;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .image-link {
+    font-size: 36px;
+  }
   .about-paragraph {
     font-size: 14px;
     max-width: 400px;
