@@ -177,8 +177,13 @@ footer a {
   }
   .grid-4-even-columns {
     margin: 30px 30px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 10px;
+  }
+  
+  .home-images{
+    height: 300px;
+    aspect-ratio: 4 / 5;
   }
   .image-link {
     font-size: 36px;
